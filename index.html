@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tools for BDFD</title>
+
+    <!-- CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-h-screen bg-[#0e0f14] text-slate-200 antialiased">
+    <!-- Grid background -->
+    <div
+      class="fixed inset-0 -z-10 opacity-[0.1]"
+      style="
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+        background-size: 48px 48px;
+      "
+    ></div>
+    <!-- HERO / INTRO -->
+    <section
+      class="min-h-screen flex flex-col items-center justify-center text-center px-6"
+    >
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">BDFD Toolkit</h1>
+
+      <p class="max-w-2xl text-lg opacity-80 mb-10">
+        A modern toolkit for BDFD developers. Escape code, analyze brackets,
+        count lines, and optimize your bot scripts faster than ever.
+      </p>
+    </section>
+
+    <!-- TOOLS SECTION -->
+    <section class="py-10 px-6 max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center">Available Tools</h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Escape Tool -->
+        <a
+          href="/tool/code-stats"
+          class="glass p-6 rounded-2xl hover:scale-[1.02] transition-all"
+        >
+          <h3 class="text-xl font-semibold mb-3">Code Escape</h3>
+          <p class="opacity-70">
+            Automatically escape BDFD code blocks and special characters. No
+            more broken embeds.
+          </p>
+        </a>
+
+        <!-- Stats Tool -->
+        <a
+          href="/tool/code-stats"
+          class="glass p-6 rounded-2xl hover:scale-[1.02] transition-all"
+        >
+          <h3 class="text-xl font-semibold mb-3">Code Stats</h3>
+          <p class="opacity-70">
+            Analyze bracket count, total lines, nesting depth, and optimize your
+            scripts.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTRIBUTING -->
+    <section class="py-10 px-6 text-center border-t border-white/10">
+      <h2 class="text-3xl font-bold mb-6">Contribute</h2>
+
+      <p class="max-w-2xl mx-auto opacity-80 mb-8">
+        Want to improve the toolkit? Found a bug? Have a new tool idea?
+        Contributions, suggestions, and feature requests are welcome!
+      </p>
+      <!-- Contributors -->
+      <div class="mx-auto mb-8">
+        <div
+          id="contrib-avatars"
+          class="flex flex-wrap justify-center items-center gap-2 max-w-3xl mx-auto"
+        ></div>
+      </div>
+      <a
+        href="https://github.com/user-lezi/bdfd"
+        target="_blank"
+        class="px-6 py-3 rounded-xl border border-[rgb(var(--accent))] hover:bg-[rgb(var(--accent))]/20 transition"
+      >
+        Contribute on GitHub
+      </a>
+    </section>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
